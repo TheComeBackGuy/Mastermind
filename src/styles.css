@@ -1,0 +1,121 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(175, 140, 100);
+  padding: 0;
+  margin: 0;
+}
+
+.youLose {
+  position: fixed;
+  margin: -25px 0 0 -100px;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(121, 27, 27);
+  color: white;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  stroke: ;
+  /* z-index: 100; */
+}
+
+#board {
+  /* transform: rotate(45deg); */
+  top: 50px;
+  left: 50%;
+  margin-left: -300px;
+  position: fixed;
+  background-color: rgb(90, 89, 89);
+  width: 600px;
+  height: 250px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(4, 50px);
+  grid-template-columns: repeat(11, 50px);
+  grid-gap: 5px;
+  padding: 10px;
+}
+
+.guess {
+  background-image: url("./images/pegHole.png");
+  background-size: 40px;
+  width: 50px;
+  height: 50px;
+  border-right: 1px rgb(120, 120, 120) solid;
+  border-top: 1px rgb(39, 39, 39) solid;
+  background-color: rgb(78, 78, 78);
+  /* cursor: pointer; */
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+}
+
+.disabled {
+  background-color: rgb(78, 78, 78);
+  cursor: auto;
+}
+.currentGuess {
+  background-color: rgb(88, 88, 88);
+  cursor: pointer;
+}
+
+.newMarble {
+  background-image: url("./images/marble_unassigned.png");
+}
+
+.red {
+  background-image: url("./images/marble_red.png");
+}
+.blue {
+  background-image: url("./images/marble_blue.png");
+}
+.yellow {
+  background-image: url("./images/marble_yellow.png");
+  background-size: 40px;
+}
+.green {
+  background-image: url("./images/marble_green.png");
+}
+.black {
+  background-image: url("./images/marble_black.png");
+}
+.white {
+  background-image: url("./images/marble_white.png");
+}
+
+.answer {
+  background-color: black;
+}
+
+#submit {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  width: 150px;
+  margin-left: -75px;
+  align-content: center;
+  background-color: rgb(97, 47, 47);
+  border: 0;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+/*////////////////////////////grid pegs*/
+/* 
+.r1c1 {
+  grid: 1 1;
+}
+
+.r2c1 {
+  grid: 2 1;
+}
+
+.r3c1 {
+  grid: 3 1;
+}
+.r4c1 {
+  grid: 1 4;
+  background-color: purple;
+} */
