@@ -3,8 +3,28 @@ body {
   background-color: rgb(175, 140, 100);
   padding: 0;
   margin: 0;
+
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
+#legend {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  height: 15px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.legendImage {
+  width: 15px;
+  height: 15px;
+}
 .youLose {
   position: fixed;
   margin: -25px 0 0 -100px;
@@ -17,7 +37,7 @@ body {
   text-align: center;
   padding: 10px;
   text-transform: uppercase;
-  stroke: ;
+
   /* z-index: 100; */
 }
 
@@ -29,10 +49,10 @@ body {
   position: fixed;
   background-color: rgb(90, 89, 89);
   width: 600px;
-  height: 250px;
+  height: 300px;
   border-radius: 10px;
   display: grid;
-  grid-template-rows: repeat(4, 50px);
+  grid-template-rows: repeat(6, 50px);
   grid-template-columns: repeat(11, 50px);
   grid-gap: 5px;
   padding: 10px;
@@ -49,6 +69,49 @@ body {
   /* cursor: pointer; */
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
+  background-position: center;
+}
+.pegHolder {
+  /* background-image: url("./images/pegHole.png"); */
+  /* background-size: 40px; */
+  width: 50px;
+  height: 50px;
+  border-right: 1px rgb(120, 120, 120) solid;
+  border-top: 1px rgb(39, 39, 39) solid;
+  background-color: rgb(78, 78, 78);
+  display: grid;
+  grid-template-rows: repeat(2, 25px);
+  grid-template-columns: repeat(2, 25px);
+  /* cursor: pointer; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+}
+
+.peg {
+  background-image: url("./images/pegHole.png");
+  background-size: 15px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.greenPeg {
+  background-image: url("./images/peg_green.png");
+  background-size: 15px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.redPeg {
+  background-image: url("./images/peg_red.png");
+  background-size: 15px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -102,20 +165,3 @@ body {
   color: white;
   cursor: pointer;
 }
-/*////////////////////////////grid pegs*/
-/* 
-.r1c1 {
-  grid: 1 1;
-}
-
-.r2c1 {
-  grid: 2 1;
-}
-
-.r3c1 {
-  grid: 3 1;
-}
-.r4c1 {
-  grid: 1 4;
-  background-color: purple;
-} */
